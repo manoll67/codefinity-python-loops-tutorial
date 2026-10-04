@@ -7,6 +7,14 @@ visa_required = ['China', 'India', 'Saudi Arabia', 'Brazil', 'United Arab Emirat
 # List of visa-free travel destinations
 travel_list = []
 
+for i in countries:
+    if i in visa_required:
+        continue
+
+    if len(travel_list) == 10:
+        break
+
+    travel_list.append(i)
 
 
 # Testing
